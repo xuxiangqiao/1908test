@@ -12,14 +12,14 @@
  <center><h3>品牌添加</h3></center>  
 
 
-<form class="form-horizontal" role="form" action="{{url('/store')}}" method="post">
-
+<form class="form-horizontal" role="form" action="{{url('/brand/store')}}" method="post" enctype="multipart/form-data">
+@csrf
 	<div class="form-group">
 		<label for="firstname" class="col-sm-2 control-label">品牌名称</label>
 		<div class="col-sm-8">
 			<input type="text" class="form-control" name="b_name" id="firstname" 
 				   placeholder="请输入名字">
-			
+			<b style="color:red">{{$errors->first('b_name')}}</b>
 		</div>
 	</div>
 
@@ -28,7 +28,7 @@
 		<div class="col-sm-8">
 			<input type="text" class="form-control" name="url" id="firstname" 
 				   placeholder="请输入名字">
-			
+			<b style="color:red">{{$errors->first('url')}}</b>
 		</div>
 	</div>
 
