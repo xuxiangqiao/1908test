@@ -62,7 +62,9 @@
             activeSlideClass: "es-active",
             slideCaptionClass: "es-caption",
             pagerClass: "es-pager",
+ 
             pagerImage: "/static/index/images/pagericon.png",
+
         },
 
         /* Initialization function

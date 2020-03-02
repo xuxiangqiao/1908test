@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {return view('welcome');});
 //登入
 Route::get('login','LoginController@login');
@@ -24,3 +25,4 @@ Route::get('admin/edit/{id}','Admincontroller@edit');
 Route::post('admin/update/{id}','Admincontroller@update');
 Route::get('admin/destroy/{id}','Admincontroller@destroy');
 Route::get('admin/list','Admincontroller@list');
+
