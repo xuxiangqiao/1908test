@@ -9,8 +9,9 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "alibabacloud/client": "^1.5",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.2",
+        "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
@@ -36,8 +37,12 @@
         },
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories" 
+        ],
+        "files": [
+            "app/Helpers/functions.php"  
         ]
+        
     },
     "autoload-dev": {
         "psr-4": {

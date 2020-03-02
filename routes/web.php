@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
+//登入
+Route::get('login','LoginController@login');
+//执行登入
+Route::post('/logindo','LoginController@logindo');
+//管理员添加
+Route::get('admin/creat','Admincontroller@create');
+Route::post('admin/store','Admincontroller@store');
+Route::get('admin/index','Admincontroller@index');
+Route::get('admin/edit/{id}','Admincontroller@edit');
+Route::post('admin/update/{id}','Admincontroller@update');
+Route::get('admin/destroy/{id}','Admincontroller@destroy');
+Route::get('admin/list','Admincontroller@list');
